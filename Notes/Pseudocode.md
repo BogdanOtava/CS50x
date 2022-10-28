@@ -1,0 +1,15 @@
+# Pseudocode
+
+**Pseudocode** is a human-readable version of the code.
+
+It's an important skill for many reasons.
+
+- First, when you _pseudocode_ before creating the former code, it allows to thing through the logic of your problem in advance.
+- Secondly, you can later provide this information to others that are seeking to understand the decisions and how your code works.
+
+The language within the pseudocode has some unique features.
+
+- some of the lines could begin with **verbs** such as: _pick up_, _open_, _close_, etc.
+- some lines include **conditional statements**, like _if_, or _else if_.
+- there are expressions that can be stated as _true_ or _false_, called **boolean expressions**.
+- some lines have statements such as _go back to_, called **loops**.
