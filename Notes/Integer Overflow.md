@@ -1,0 +1,21 @@
+# Integer Overflow
+
+**Integer overflow** happens when an integer can only be so large given a finite number of bits.
+
+The **Y2K** problem arose because many programs stored the calendar year with just two digits, like `98` for _1998_, and `99` for _1999_. When the year _2000_ approached, the programs had to store only `00`, leading to confusion betwenn the years _1900_ and _2000_.
+
+In **2038**, we'll also run out of bits to track time, since the standard number of bits to count the number of seconds since `January 1st 1970` is **32**. A **32** bit integer can only count up to about two billion, so in **2038** we'll reach that limit.
+
+- the 32 bit of an integer representing **2147483647** looks like:
+
+```
+01111111111111111111111111111111
+```
+
+- when we increase that by _1_, the bits will look like:
+
+```
+10000000000000000000000000000000
+```
+
+- but the first bit in an integer represent whether or not it's a negative value, so the decimal value will actually be **-2147483647**, the lowest possible _negative_ value of an _int_. So computers might actually think it's sometime in **1901**.

@@ -1,6 +1,6 @@
 # Variables
 
-**Variables** must be a specified **data type** and they need **format specifiers** to be printed.
+In **C**, **variables** must be a specified **data type** and they need **format specifiers** to be printed.
 
 ---
 
@@ -36,3 +36,9 @@
 - **'\*'** for multiplication
 - **'/'** for division
 - **'%'** for remainder
+
+---
+
+## Syntactic Sugar
+
+**C** also supports _syntactic sugar_, or shorthand expressions for the same functionality. We could equivalently say `counter += 1;` to add one to _counter_ before storing it again. We could also just write `counter++` or `counter--`.

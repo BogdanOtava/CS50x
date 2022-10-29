@@ -1,0 +1,34 @@
+# Floating Point Imprecision
+
+**Floating Point Imprecision** is the inability for computers to represent all possible real numbers with a finite number of bits, like 32 bits for a float. So, computers have to store the closest value it can, leading to imprecision.
+
+To see this, we'll change the number of decimals displayed by specifing the number in the _print_ statement.
+
+## Example
+
+**Code:**
+
+```
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    float x = get_float("x: ");
+    float y = get_float("y: ");
+
+    float z = x / y;
+
+    printf("%.50f\n", z);
+}
+```
+
+**Result:**
+
+```
+x: 2
+
+y: 3
+
+0.66666668653488159179687500000000000000000000000000
+```
