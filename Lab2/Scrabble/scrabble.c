@@ -1,3 +1,7 @@
+/*
+https://cs50.harvard.edu/x/2022/labs/2/
+*/
+
 #include <ctype.h>
 #include <cs50.h>
 #include <stdio.h>

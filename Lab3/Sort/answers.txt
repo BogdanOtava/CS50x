@@ -1,3 +1,5 @@
+https://cs50.harvard.edu/x/2022/labs/3/#walkthrough
+
 sort1 uses: Bubble Sort
 
 How do you know?: Has a fast runtime for the sorted datasets, but it performes poorer on bigger datasets of reversed and random numbers.
