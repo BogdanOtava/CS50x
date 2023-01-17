@@ -1,5 +1,5 @@
 /*
-https://cs50.harvard.edu/x/2022/psets/1/mario/less/
+https://cs50.harvard.edu/x/2023/psets/1/mario/more/
 */
 
 #include <cs50.h>
@@ -14,10 +14,10 @@ int main(void)
     do
     {
         height = get_int("Height: ");
-    } 
+    }
     while (height < 1 || height > 8);
 
-    // Outer loop / Switch to next line of the pyramid after printing the spaces and blocks:
+    // Outer loop / Switch to the next line of the pyramid after printing the spaces and blocks
     for (int line = 0; line < height; line++)
     {
         // Print the spaces
@@ -26,8 +26,17 @@ int main(void)
             printf(" ");
         }
 
-        // Print the blocks
-        for (int block = 0; block <= line; block++)
+        // Print the left blocks
+        for (int left_blocks = 0; left_blocks <= line; left_blocks++)
+        {
+            printf("#");
+        }
+
+        // Print the two spaces between the blocks
+        printf("  ");
+
+        // Print the right blocks
+        for (int right_blocks = 0; right_blocks <= line; right_blocks++)
         {
             printf("#");
         }
