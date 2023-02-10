@@ -1,5 +1,5 @@
 """
-https://cs50.harvard.edu/x/2023/psets/6/mario/less/
+https://cs50.harvard.edu/x/2023/psets/6/mario/more/
 """
 
 
@@ -22,6 +22,8 @@ def print_pyramid(height):
 
     for line in range(height):
         print(" " * (height - line - 1), end="")
+        print("#" * (line + 1), end="")
+        print("  ", end="")
         print("#" * (line + 1))
 
 
