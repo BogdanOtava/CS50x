@@ -2,7 +2,6 @@
 https://cs50.harvard.edu/x/2023/psets/6/mario/more/
 """
 
-
 def get_height():
     """Returns the height that was given by the user."""
 

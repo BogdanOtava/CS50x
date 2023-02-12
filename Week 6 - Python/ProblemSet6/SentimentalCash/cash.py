@@ -1,3 +1,7 @@
+"""
+https://cs50.harvard.edu/x/2023/psets/6/cash/
+"""
+
 def main():
     dollars = get_input()
     amount = get_coins(dollars)

@@ -2,8 +2,6 @@
 https://cs50.harvard.edu/x/2023/labs/6/
 """
 
-# Simulate a sports tournament
-
 import csv
 import sys
 import random
