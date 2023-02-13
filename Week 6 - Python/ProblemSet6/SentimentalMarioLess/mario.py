@@ -24,5 +24,5 @@ def print_pyramid(height):
         print("#" * (line + 1))
 
 
-# Call the function that prints the pyramid which takes as argument the function that returns the height
+# Call the function that prints the pyramid which takes as argument the function that returns the height.
 print_pyramid(get_height())

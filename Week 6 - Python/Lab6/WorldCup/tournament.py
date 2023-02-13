@@ -6,17 +6,17 @@ import csv
 import sys
 import random
 
-# Number of simluations to run
+# Number of simluations to run.
 N = 100
 
 
 def main():
 
-    # Ensure correct usage
+    # Ensure correct usage.
     if len(sys.argv) != 2:
         sys.exit("Usage: python tournament.py FILENAME")
 
-    # Read teams into memory
+    # Read teams into memory.
     teams = []
 
     with open(sys.argv[1]) as file:
@@ -26,7 +26,7 @@ def main():
             team["rating"] = int(team["rating"])
             teams.append(team)
 
-    # Keep track of number of wins for each team
+    # Keep track of number of wins for each team.
     counts = {}
 
     for _ in range(N):
@@ -37,7 +37,7 @@ def main():
         else:
             counts[winner] = 1
 
-    # Print each team's chances of winning, according to simulation
+    # Print each team's chances of winning, according to simulation.
     for team in sorted(counts, key=lambda team: counts[team], reverse=True):
         print(f"{team}: {counts[team] * 100 / N:.1f}% chance of winning")
 
@@ -57,7 +57,7 @@ def simulate_round(teams):
 
     winners = []
 
-    # Simulate games for all pairs of teams
+    # Simulate games for all pairs of teams.
     for i in range(0, len(teams), 2):
         if simulate_game(teams[i], teams[i + 1]):
             winners.append(teams[i])
