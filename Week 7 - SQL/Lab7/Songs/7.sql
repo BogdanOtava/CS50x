@@ -4,5 +4,9 @@ Your query should output a table with a single column and a single row containin
 You should not make any assumptions about what Drake’s artist_id is.
 */
 
-SELECT AVG(energy) FROM songs
-WHERE artist_id = (SELECT id FROM artists WHERE name = "Drake");
+SELECT AVG(energy) 
+FROM songs
+WHERE artist_id = (
+    SELECT id 
+    FROM artists 
+    WHERE name = "Drake");

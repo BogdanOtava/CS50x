@@ -3,5 +3,6 @@ Write a SQL query that lists the names of any songs that have danceability, ener
 Your query should output a table with a single column for the name of each song.
 */
 
-SELECT name FROM songs
+SELECT name 
+FROM songs
 WHERE (danceability > 0.75 AND energy > 0.75 AND valence > 0.75);
