@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS Style -->
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Contact</title>
+    </head>
+    <body>
+        <!-- Start of the Contact Page -->
+        <div class="main-wrapper">
+            <!-- Start of the Header -->
+            <div class="header">
+                <!-- Start of the Navigation Menu -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="index.html"><span class="first-letter">H</span>ello <span class="first-letter">W</span>orld</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link is-active" href="contact.html">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                <!-- End of the Navigation Menu -->
+            </div>
+            <!-- End of the Header -->
+            <!-- Start of the Main Content -->
+            <div class="contact-container">
+              <div class="main-title">
+                  <h1>Leave a Message</h1>
+              </div>
+              <div class="row">
+                <div class="col-lg-7 mx-auto">
+                  <div class="contact mt-2 mx-auto p-4">
+                    <div class="contact-body">
+                      <div class = "container">
+                        <form id="contact-form" role="form">
+                      <div class="controls">
+                        <!-- 1st Row -->
+                        <div class="row">
+                          <!-- First Name Box -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="firstname">First Name</label>
+                              <input id="firstname" type="text" name="firstname" class="form-control" placeholder="First Name" required data-error="Please enter your first name.">
+                            </div>
+                          </div>
+                          <!-- Last Name Box -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="lastname">Last Name</label>
+                              <input id="lastname" type="text" name="lastname" class="form-control" placeholder="Last Name" required data-error="Please enter your last name.">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 2nd Row -->
+                        <div class="row">
+                          <!-- Email Box -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input id="email" type="email" name="email" class="form-control" placeholder="Email" required data-error="Please enter your email.">
+                            </div>
+                          </div>
+                          <!-- Subject Box -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="subject">Subject</label>
+                                <select id="subject" name="subject" class="form-control" required data-error="Please choose a subject.">
+                                  <option value="" selected disabled>Choose a Subject</option>
+                                  <option >Work Opportunity</option>
+                                  <option >Request a CV</option>
+                                  <option >Request a Phone Number</option>
+                                  <option >Other</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- 3rd Row -->
+                        <div class="row">
+                          <!-- Message Box -->
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea id="message" name="message" class="form-control" placeholder="Message" rows="4" required data-error="Please write a message."></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <input type="submit" class="button btn btn-secondary" value="Send Message">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!-- End of the Main Content -->
+            <!-- Start of the Footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="socials text-center">
+                        <ul class="footer-list">
+                            <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-gmail'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- End of the Footer -->
+        </div>
+        <!-- End of the Contact Page -->
+    </body>
+</html>
