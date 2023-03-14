@@ -1,0 +1,18 @@
+<!-- The 'Withdraw' Page -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Deposit Funds
+{% endblock %}
+
+{% block main %}
+<form action="/withdraw" method="post">
+    <div class="mb-3">
+        <label class="mb-3 fw-bold" for="buy">Withdraw Funds</label>
+        <input class="form-control mx-auto w-auto mb-3" type="password" id="password" name="password" placeholder="Confirm Password" minlength="1" required>
+        <input class="form-control mx-auto w-auto mb-3" type="number" id="sum" name="sum" placeholder="Amount ($)" min="10" step="10" required>
+        <button class="btn btn-primary btn-sm" type="submit">Buy</button>
+    </div>
+</form>
+{% endblock %}

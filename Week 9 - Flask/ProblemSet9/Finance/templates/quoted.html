@@ -1,0 +1,26 @@
+<!-- 'Quote' Results Page -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block main %}
+    <table class="table table-light mx-auto w-25">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ stock.name }}</td>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

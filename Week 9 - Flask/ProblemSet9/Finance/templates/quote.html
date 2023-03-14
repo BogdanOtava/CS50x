@@ -1,0 +1,17 @@
+<!-- 'Quote' Page -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <label class="mb-3 fw-bold" for="quote">Search for Stock Value</label>
+            <input class="form-control mx-auto w-auto mb-3" id="symbol" name="symbol" placeholder="Example: AMD" minlength=1 required>
+            <button class="btn btn-primary btn-sm" type="submit">Quote</button>
+        </div>
+    </form>
+{% endblock %}
