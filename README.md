@@ -172,7 +172,7 @@ Keep in mind the course's [academic honesty](https://cs50.harvard.edu/x/2023/hon
 
 <br>
 
-- **[Portfolio Website](#)** - _work in progress_.
+- **[Portfolio Website](https://github.com/BogdanOtava/Portfolio-Website)** - _full-stack portfolio website_.
 
 ---
 
